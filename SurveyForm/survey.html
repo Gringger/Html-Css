@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<div id="main">
+<p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form">
+        <div class="row">
+            <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="rightTab"><input class="input-field" id="name" type="text" autofocus placeholder="Enter your name" required></div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="rightTab"><input class="input-field" id="email" type="email" autofocus placeholder="Enter your email" required></div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="number-label" for="number">* Age: </label>
+            </div>
+            <div class="rightTab">
+                <input class="input-field" id="number" type="number" autofocus placeholder="Enter your age" min="1" max="125" required></div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="role" for="dropdown">Which option best describes your current role?</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="professor">Professor</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="pupil">Pupil</option>
+                    <option value="worker">Worker</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="recomend-label">* How likely is that you would recommend freeCodeCamp to a friend? </label>
+            </div>
+            <div class="rightTab">
+                    <input type="radio" name="radio-buttons" value="1">Definitely</br>
+                <input type="radio" name="radio-buttons" value="2">Maybe</br>
+                <input type="radio" name="radio-buttons" value="3">Not sure
+                </p></div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="ffc" for="dropdown2">What do you like most in FCC:</label>
+            </div>
+            <div class="rightTab">
+                <select id="dropdown2">
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="opesource">Open Source</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="feedback-label">Things that should be improved in the future
+                    (Check all that apply):</label>
+            </div>
+            <div class="rightTab">
+                <input type="checkbox" value="frontend">Front-end Projects</br>
+                <input type="checkbox" value="backend">Back-end Projects</br>
+                <input type="checkbox" value="datav">Data Visualization</br>
+                <input type="checkbox" value="challenges">Challenges</br>
+                <input type="checkbox" value="osc">Open Source Community</br>
+                <input type="checkbox" value="ghr">Gitter help rooms</br>
+                <input type="checkbox" value="videos">Videos</br>
+                <input type="checkbox" value="citymeet">City Meetups</br>
+                <input type="checkbox" value="wiki">Wiki</br>
+                <input type="checkbox" value="forum">Forum</br>
+                <input type="checkbox" value="addcourses">Additional Courses</br>
+
+
+                </p></div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label id="add-label" >Any Comments or Suggestions? </label>
+            </div>
+            <div class="rightTab"><textarea placeholder="Enter your comments here..."></textarea></div>
+        </div>
+
+        <button id="submit">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>
