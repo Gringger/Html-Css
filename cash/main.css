@@ -1,0 +1,36 @@
+
+.back{
+    background-color: #eeeeee;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+.input{
+border-radius: 5px;
+}
+.bigLeft{
+    margin-top: 150px;
+}
+.bottomRows{
+    margin-top: 10px;
+    border: 1px solid  darkgray;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: white;
+}
+.counter{
+    background-color: #eeeeee;
+    border-radius: 20%;
+}
+.btnBox1{
+    text-align: right;
+}
+.prodName{
+    padding-top: 5px;
+}
+.bigRight	{
+    margin-top: 125px;
+}
+#prodLeftQuantity{
+border-radius: 50%;
+}

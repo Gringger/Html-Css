@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cash</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script	type="text/javascript" src="main.js">	</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<body class="back">
+<div class="container-fluid">
+    <div class="col-md-3"></div>
+    <div class="col-md-5 bigLeft">
+        <div class="row" >
+          <div class="col-md-10">  <input class ="input form-control" type="text"  placeholder="Назва товару" id="prodNameAdd"></div>
+            <div class="col-md-2"> <button class="btn btn-primary" id="add">Додати</button></div>
+        </div>
+        <div class="row bottomRows" id="copyThis"  style="display: none">
+            <span class="col-md-7 prodName">Сир</span>
+            <span class="col-md-2 btnBox1">
+                <button class="btn btn-warning" id="plus">+</button>
+                <span class="counter" id="quantity">1</span>
+                <button class="btn btn-warning" id="minus">-</button>
+            </span>
+            <span class="col-md-3">
+                <button class="btn btn-default Bought" id="buy">Куплено</button>
+                 <button class="btn btn-danger" id="delete">X</button>
+            </span>
+
+        </div>
+        </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2 bigRight">
+        <div class="row">
+            <h2>Залишилось</h2>
+        </div>
+        <div class="row bottomRows" id="prodLeft">
+          <span style="display: none" id="copyLeftProduct">
+            <span id="prodLeftName">Помідори</span>
+              <span ><button class="btn btn-warning" id="prodLeftQuantity" disabled="true" >1</button></span>
+          </span>
+        </div>
+        <div class="row">
+            <h2>Куплено</h2>
+        </div>
+        <div class="row bottomRows" id="prodBought">
+
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
