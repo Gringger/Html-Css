@@ -39,15 +39,23 @@ $newLeft.find("#delete").click(function () {
 
 );
 $newLeft.find("#buy").click(function () {
-    var $bought = $newRight.clone().appendTo("#prodBought");
-    $newRight.remove();
-    $bought.show();
-    $newLeft.find("#plus").prop("disabled", true);
-    $newLeft.find("#minus").prop("disabled", true);
-    $newLeft.find("#delete").prop("disabled", true);
-    $newLeft.find("#buy").prop("disabled", true);
-    isBought=true;
+    if(isBought==false) {
+        $newRight.appendTo("#prodBought");
+        $newLeft.find("#plus").prop("disabled", true);
+        $newLeft.find("#minus").prop("disabled", true);
+        $newLeft.find("#delete").prop("disabled", true);
+        isBought = true;
         $newLeft.find("#buy").text("Не куплено");
+    }
+    else{
+        $newRight.appendTo("#prodLeft");
+        $newLeft.find("#plus").prop("disabled", false);
+        $newLeft.find("#minus").prop("disabled", false);
+        $newLeft.find("#delete").prop("disabled", false);
+        $newLeft.find("#buy").prop("disabled", false);
+        isBought = false;
+        $newLeft.find("#buy").text("Куплено");
+    }
 });
 
 
